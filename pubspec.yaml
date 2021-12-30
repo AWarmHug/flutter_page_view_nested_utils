@@ -1,7 +1,8 @@
 name: flutter_page_view_nested_utils
 description: Help pageview to scroll nested in another pageview
 version: 0.0.1
-homepage:
+homepage: https://github.com/AWarmHug/flutter_page_view_nested_utils
+repository: https://github.com/AWarmHug/flutter_page_view_nested_utils
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
