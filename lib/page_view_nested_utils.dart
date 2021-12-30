@@ -11,7 +11,8 @@ class PageViewNestedUtils {
   DragStartDetails? dragStartDetails;
 
   bool handleNotification(ScrollNotification notification) {
-    if(notification.depth==0){
+
+    if (notification.depth == 0) {
       return false;
     }
 

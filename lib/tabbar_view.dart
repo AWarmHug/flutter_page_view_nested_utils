@@ -178,7 +178,7 @@ class _NestedTabBarViewState extends State<NestedTabBarView> {
 
   // Called when the PageView scrolls
   bool _handleScrollNotification(ScrollNotification notification) {
-    debugPrint("---------${notification}");
+
     if (_warpUnderwayCount > 0) return false;
 
     if (notification.depth != 0) {

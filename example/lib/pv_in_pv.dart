@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_page_view_nested_utils/page_view_nested_utils.dart';
 
@@ -36,22 +34,53 @@ class _PageViewPageState extends State<PageViewPage> {
               Center(
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  color: Colors.red,
-                  child: Page2(),
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Expanded(child: Page2()),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Expanded(child: Page2()),
+                    ],
+                  ),
                 ),
               ),
               Center(
                 child: Text("b"),
               ),
               Center(
-                child: Text("c"),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Expanded(child: Page2()),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Expanded(child: Page2()),
+                    ],
+                  ),
+                ),
               ),
               Center(
                 child: Text("d"),
               ),
               Center(
-                child: Text("e"),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Expanded(child: Page2()),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Expanded(child: Page2()),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
@@ -66,24 +95,27 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageView(
-      children: [
-        Center(
-          child: Text("a"),
-        ),
-        Center(
-          child: Text("b"),
-        ),
-        Center(
-          child: Text("c"),
-        ),
-        Center(
-          child: Text("d"),
-        ),
-        Center(
-          child: Text("e"),
-        ),
-      ],
+    return Container(
+      color: Colors.red,
+      child: PageView(
+        children: [
+          Center(
+            child: Text("a"),
+          ),
+          Center(
+            child: Text("b"),
+          ),
+          Center(
+            child: Text("c"),
+          ),
+          Center(
+            child: Text("d"),
+          ),
+          Center(
+            child: Text("e"),
+          ),
+        ],
+      ),
     );
   }
 }
